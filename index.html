@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+</head>
+
+<body>
+    <h1>Dom DoMa Dom event</h1>
+
+    <!-- option 1 for event handler -->
+    <button onclick="console.log(7)">Fuck me</button>
+    <button onclick="console.log(63)">Another click</button>
+    <button onclick="console.log('i amm clicked')">some body click click</button>
+    <input type="text" name="" id="">
+    <br>
+
+    <!-- option 2 for click event handler -->
+    <button onclick="makeYellow()"> color Yellow</button>
+    <button onclick="banaLall()"> color Red</button>
+    <script>
+        function makeYellow() {
+            document.body.style.backgroundColor = 'yellow'
+        }
+        function banaLall() {
+            document.body.style.backgroundColor = 'Red'
+        }
+    </script>
+
+
+
+    <!-- Opction three for click event handelar   -->
+    <button id="btn-make-blue">Make blue</button>
+    <script>
+        const btnMakeBlue = document.getElementById('btn-make-blue');
+        btnMakeBlue.onclick = function () {
+            document.body.style.backgroundColor = 'blue'
+        }
+    </script>
+
+
+
+    <!--Opction three for click event handelar  -->
+    <!-- We use this -->
+    <button id="btn-make-purple">Make purple</button>
+    <script>
+        const btnMakePurple = document.getElementById('btn-make-purple');
+        btnMakePurple.addEventListener('click', function () {
+            document.body.style.backgroundColor = 'purple'
+        })
+    </script>
+
+    <!--  -->
+    <button id="btn-make-green">Make Green</button>
+    <script>
+        document.getElementById('btn-make-green').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'green'
+        })
+    </script>
+
+    <script src="js/event.js"></script>
+</body>
+
+</html>

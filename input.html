@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="name">No name</p>
+    <input placeholder="your name" id="input-name" type="text">
+    <button id="btn-update-title-2">Update title 2</button>
+
+    <script>
+        // set even lister
+        document.getElementById('btn-update-title-2')
+            .addEventListener('click', function () {
+                console.log('I am clicked');
+
+                // 2. get the text from input field
+                const inputField = document.querySelector('input');
+                const inputName = inputField.value;
+                console.log(inputName);
+
+                //set the name
+                const namePeragraph = document.getElementById('name');
+                namePeragraph.innerText = inputName;
+            })
+    </script>
+</body>
+
+</html>
