@@ -10,16 +10,16 @@
 <input id="user-name" type="text" placeholder="Enter your name">
 <input id="Email" type="text" placeholder="Enter your email">
 <script>
-    // document.getElementById('btn-mouse')
-    //     .addEventListener('mouseenter', function () {
-    //         console.log('event triggered');
-    //     })
+    document.getElementById('btn-mouse')
+        .addEventListener('mouseenter', function () {
+            console.log('event triggered');
+        })
 
 
-    // document.getElementById('btn-mouse')
-    //     .addEventListener('mousemove', function () {
-    //         console.log('event triggered');
-    //     })
+    document.getElementById('btn-mouse')
+        .addEventListener('mousemove', function () {
+            console.log('event triggered');
+        })
 
     document.getElementById('btn-mouse')
         .addEventListener('mouseout', function () {
@@ -27,26 +27,25 @@
         })
 
 
-    // document.getElementById('user-name')
-    //     .addEventListener('focus', function () {
-    //         console.log('user about to write');
-    //     })
-    // document.getElementById('user-name')
-    //     .addEventListener('blur', function () {
-    //         console.log('user done to write');
-    //     })
+    document.getElementById('user-name')
+        .addEventListener('focus', function () {
+            console.log('user about to write');
+        })
 
-    // document.getElementById('Email')
-    //     .addEventListener('focus', function () {
-    //         console.log('user about to email');
-    //     })
+    document.getElementById('user-name')
+        .addEventListener('blur', function () {
+            console.log('user done to write');
+        })
 
+    document.getElementById('Email')
+        .addEventListener('focus', function () {
+            console.log('user about to email');
+        })
 
     document.getElementById('user-name')
         .addEventListener('keydown', function () {
             console.log('typing', event.target.value);
         })
-
 
     document.getElementById('Email')
         .addEventListener('keyup', function () {
